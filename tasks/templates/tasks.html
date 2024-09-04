@@ -20,8 +20,14 @@
                <p class = "bg-danger">{{task}}</p>
         </div>
         {% endfor %}
-        </div>
-    </div>
+    </div class ="form">
+    <form method="POST">
+        {% csrf_token %}
+        {{form.title}}
+         <button class  = "btn btn-info" type="submit">Add Task</button>
+    </form>
+        
+</div>
         <script src="" async defer></script>
     </body>
 </html>

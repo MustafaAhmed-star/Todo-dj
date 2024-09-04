@@ -16,8 +16,10 @@
      <div class="container bg-info">
         <div class="row">
         {% for task in tasks  %}
+        
         <div class="col-4 mt-4 ">
                <p class = "bg-danger">{{task}}</p>
+               <a href="{% url "update-task" task.id %}" >Edit</a>
         </div>
         {% endfor %}
     </div class ="form">

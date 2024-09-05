@@ -17,7 +17,7 @@
 
                         <li class="list-group-item d-flex justify-content-between align-items-center">
 
-                            {{ task.title }}
+                           <a href = "{% url "task-detail" task.id %}"> {{ task.title }}</a>
                             <div class="text-end">
                                 <input type="checkbox" name="completed" id="task-{{ task.id }}" class="me-3" {% if task.completed %}checked{% endif %}>
 

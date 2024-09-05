@@ -4,3 +4,7 @@
 .db.sqlite3
 /db.sqlite3
 dbsqlite3
+
+db.sqlite3
+db.sqlite3-wal
+migrations/

@@ -19,7 +19,10 @@ def taskList(request):
     
     return render(request,'tasks.html',context)
     
+def taskDetail(request,pk):
+    task = Task.objects.get(pk=pk)
     
+    return render(request,'task_detail.html',{'task':task})
 def updateTask(request,pk):
     task = Task.objects.get(id = pk)
     form = TaskForm(instance =task)

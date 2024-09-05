@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 class Task(models.Model):
     title = models.CharField(max_length=100)
-    active = models.BooleanField(default = True)
+    description = models.TextField()
     completed  = models.BooleanField(default = False)
     created_at = models.DateTimeField(auto_now_add=True)
     
